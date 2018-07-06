@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell, Navigation } from 'react-mdl';
+import { Link } from 'react-router-dom';
 
 class LandingPage extends Component {
     render() {
@@ -14,10 +15,19 @@ class LandingPage extends Component {
                         />
 
                         <div className="banner-text">
-                            <h1>Software Developer</h1>
-
+                            <h1>Projects</h1>
+                            <h1>About</h1>
+                            <h1>Contact</h1>
+                            <h1>Resume</h1>
                             <hr/>
+                            <Navigation>
+                                <Link to="/resume"><h1>Resume</h1></Link>
+                                <Link to="/about"><h1>About</h1></Link>
+                                <Link to="/projects"><h1>Project</h1></Link>
+                                <Link to="/contact"><h1>Contact</h1></Link>
+                            </Navigation>
                         </div>
+                        
                         <div className="social-links">
                             <a href="http://google.com" rel="nooper noreferrer"target="_blank"> 
                                 <i className="fa fa-linkedin-square" aria-hidden="true" /> 
