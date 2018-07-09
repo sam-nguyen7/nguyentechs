@@ -7,31 +7,18 @@ class LandingPage extends Component {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className='landing-grid'>
-                    <Cell col ={12}>
-                        <img
-                            src="http://stephanienguyen.co/images/logo_text_half.png"
-                            alt="avatar"
-                            className="avatar-img"
-                        />
-
-                        <div className="banner-text">
-                            <h1>Projects</h1>
-                            <h1>About</h1>
-                            <h1>Contact</h1>
-                            <h1>Resume</h1>
-                            <hr/>
-                            <Navigation>
-                                <Link to="/resume"><h1>Resume</h1></Link>
-                                <Link to="/about"><h1>About</h1></Link>
-                                <Link to="/projects"><h1>Project</h1></Link>
-                                <Link to="/contact"><h1>Contact</h1></Link>
-                            </Navigation>
-                        </div>
-                        
-                        <div className="social-links">
-                            <a href="http://google.com" rel="nooper noreferrer"target="_blank"> 
-                                <i className="fa fa-linkedin-square" aria-hidden="true" /> 
-                            </a>
+                    <Cell col ={4}  class="centeritems mdl-grid">
+                        <div>
+                            <div class="mdl-layout-spacer"></div>
+                                <Link to="/resume" style={{ textDecoration: 'none', color: 'white' }}><h3>Resume</h3></Link>
+                                <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}><h3>About</h3></Link>
+                                <Link to="/projects" style={{ textDecoration: 'none', color: 'white' }}><h3>Project</h3></Link>
+                                <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}><h3>Contact</h3></Link>   
+                            <div className="social-links">
+                                <a href="http://google.com" rel="nooper noreferrer"target="_blank"> 
+                                    <i className="fa fa-linkedin-square" aria-hidden="true" /> 
+                                </a>
+                            </div>                                  
                         </div>
                     </Cell>
                 </Grid>
