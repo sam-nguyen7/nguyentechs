@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell, Button } from 'react-mdl';
 import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import Resume2018 from '../Resume2018.pdf'
 
@@ -31,19 +31,19 @@ class Resume extends Component {
 
                         <h2 style={{paddingTop: '2em'}}> Sam Nguyen </h2>
                         <h4 style={{color: 'grey'}}> Programmer </h4>
-                        <hr style={{borderTop: '2px solid red', width: '50%'}} />
-                        <p> bible verse or quote here </p>
+                        <center><hr style={{borderTop: '2px solid red', width: '50%', textAlign: 'center'}} /></center>
+                        <Button primary style={{fontSize: '1.5em', height: '40px', width: '300px'}}>Download My Resume</Button>
                     </Cell>
-                    <Cell className="resume-right-col" col={7}>
-                        <Document
-                            file = {Resume2018}
-                            onLoadSuccess={this.onDocumentLoad}
-                            loading = "Please wait while PDF loads"
-                            width = '400'
-                        >
-                            <Page pageNumber={pageNumber} />
-                        </Document>
-                        
+                    <Cell col={7}>
+                        <center><div style={{width: '612px', height: '792px'}} className="resume-right-col"> 
+                            <Document
+                                file = {Resume2018}
+                                onLoadSuccess={this.onDocumentLoad}
+                                loading = "Please wait while PDF loads."
+                            >
+                                <Page pageNumber={pageNumber} />
+                            </Document>
+                        </div></center>
 
                     </Cell>
                 </Grid>
