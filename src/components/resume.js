@@ -32,7 +32,9 @@ class Resume extends Component {
                         <h2 style={{paddingTop: '2em'}}> Sam Nguyen </h2>
                         <h4 style={{color: 'grey'}}> Programmer </h4>
                         <center><hr style={{borderTop: '2px solid red', width: '50%', textAlign: 'center'}} /></center>
-                        <Button primary style={{fontSize: '1.5em', height: '40px', width: '300px'}}>Download My Resume</Button>
+                        <a href={Resume2018} download="Resume2018.pdf">
+                            <Button primary style={{fontSize: '1.5em', height: '40px', width: '300px'}}>Download My Resume</Button>
+                        </a>
                     </Cell>
                     <Cell col={7}>
                         <center><div style={{width: '612px', height: '792px'}} className="resume-right-col"> 

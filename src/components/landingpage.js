@@ -9,7 +9,7 @@ class LandingPage extends Component {
                 <Grid className='landing-grid'>
                     <Cell col ={4}  class="centeritems mdl-grid ">
                         <div>
-                            <div class="mdl-layout-spacer"></div>
+                            <div className="mdl-layout-spacer"></div>
                                 <Link to="/resume" style={{ textDecoration: 'none', color: 'white' }}><h3>Resume</h3></Link>
                                 <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}><h3>About</h3></Link>
                                 <Link to="/projects" style={{ textDecoration: 'none', color: 'white' }}><h3>Projects</h3></Link>
