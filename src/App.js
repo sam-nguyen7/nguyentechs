@@ -3,7 +3,7 @@ import './App.css';
 import { Layout, Header, Content, Footer } from 'react-mdl';
 import Main from "./components/main";
 import { Link } from 'react-router-dom';
-import logo from './img/logo.png';
+import samName3 from './img/samName3.svg';
 
 class App extends Component {
   render() {
@@ -11,9 +11,9 @@ class App extends Component {
       <div>
         <Layout fixedHeader>
           <Header className="header-color" scroll> 
-          <Link to="/"><img className="logo" src={logo} alt="Logo"/></Link>
+            <Link to="/"><img className="logo" src={samName3} alt="Logo"/></Link>
           </Header>  
-
+          
           <Content>
             <div className="page-content" />
             <Main/>

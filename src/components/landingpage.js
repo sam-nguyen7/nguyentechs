@@ -7,19 +7,30 @@ class LandingPage extends Component {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className='landing-grid'>
-                    <Cell col ={4}  class="centeritems mdl-grid">
+                    <Cell col ={4}  class="centeritems mdl-grid ">
                         <div>
                             <div class="mdl-layout-spacer"></div>
                                 <Link to="/resume" style={{ textDecoration: 'none', color: 'white' }}><h3>Resume</h3></Link>
                                 <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}><h3>About</h3></Link>
-                                <Link to="/projects" style={{ textDecoration: 'none', color: 'white' }}><h3>Project</h3></Link>
-                                <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}><h3>Contact</h3></Link>   
-                            <div className="social-links">
-                                <a href="http://google.com" rel="nooper noreferrer"target="_blank"> 
-                                    <i className="fa fa-linkedin-square" aria-hidden="true" /> 
-                                </a>
-                            </div>                                  
+                                <Link to="/projects" style={{ textDecoration: 'none', color: 'white' }}><h3>Projects</h3></Link>
+                                <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}><h3>Contact</h3></Link> 
                         </div>
+                    </Cell>
+                    <Cell col = {12}>
+                            <div className="social-links">
+                                <a href="https://www.linkedin.com/in/samuelthanh/" rel="nooper noreferrer"target="_blank"> 
+                                    <i className="fa fa-linkedin" aria-hidden="true" /> 
+                                </a>
+                                <a href="https://github.com/sam-nguyen7" rel="nooper noreferrer"target="_blank"> 
+                                    <i className="fa fa-github" aria-hidden="true" /> 
+                                </a>
+                                <a href="https://www.instagram.com/sam_nguyen7/" rel="nooper noreferrer"target="_blank"> 
+                                    <i className="fa fa-instagram" aria-hidden="true" /> 
+                                </a>
+                                <a href=" https://www.facebook.com/sam.nguyen.1234" rel="nooper noreferrer"target="_blank"> 
+                                    <i className="fa fa-facebook" aria-hidden="true" /> 
+                                </a>
+                            </div> 
                     </Cell>
                 </Grid>
             </div>
