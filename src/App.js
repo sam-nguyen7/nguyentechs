@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Layout, Header, Content, Footer } from 'react-mdl';
+import { Layout, Header, Content, Footer, Tooltip, Icon, HeaderRow } from 'react-mdl';
 import Main from "./components/main";
 import { Link } from 'react-router-dom';
 import samName3 from './img/samName3.svg';
@@ -8,10 +8,15 @@ import samName3 from './img/samName3.svg';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{height: '300px', position: 'relative'}}>
         <Layout fixedHeader>
           <Header className="header-color" scroll> 
-            <Link to="/"><img className="logo" src={samName3} alt="Logo"/></Link>
+
+            <HeaderRow><Link to="/"><img className="logo" src={samName3} alt="Logo"/></Link>
+
+            <Tooltip label="Follow" position="left" align="right">
+                <Icon name="arrow_back" />
+            </Tooltip></HeaderRow>
           </Header>  
           
           <Content>
